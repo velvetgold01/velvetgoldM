@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VelvetGold - Moda & Beleza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    * {
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1612423284934-2850c7b43229?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #fff;
+      padding: 3rem 2rem;
+      border-bottom: 2px solid #d4af37;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      background: linear-gradient(90deg, #d4af37, #fff6d6, #d4af37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: brilhoDourado 4s linear infinite;
+    }
+
+    .menu {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .menu a {
+      color: #d4af37;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #fff;
+    }
+
+    .subtext {
+      position: relative;
+      z-index: 1;
+      text-align: left;
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+      color: #aaa;
+      font-style: italic;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes brilhoDourado {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 200%;
+      }
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    .section h2 {
+      color: #d4af37;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .product {
+      background-color: #1f1f1f;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-name {
+      margin: 1rem 0 0.5rem;
+      font-weight: bold;
+    }
+
+    .product a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #d4af37;
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .product a:hover {
+      background-color: #b7952b;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="logo">VelvetGold</div>
+      <div class="menu">
+        <a href="#moda">Moda</a>
+        <a href="#beleza">Beleza</a>
+      </div>
+    </div>
+    <div class="subtext">Moda & Beleza com estilo e sofisticação</div>
+  </header>
+
+  <section id="moda" class="section">
+    <h2>Moda</h2>
+    <div class="products">
+      <!-- seus produtos aqui -->
+    </div>
+  </section>
+  <div class="products">
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\OCULOS\OCULOSSYZK.webp" alt="Produto Moda 1">
+        <div class="product-name"> Óculos y2k Feminino/Masculino</div>
+        <a href="https://s.shopee.com.br/3q9ZRTKksk">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\OCULOS\JULIET.webp" alt="Produto Moda 2">
+        <div class="product-name"> Óculos de Sol Minu Linha Premium </div>
+        <a href=" https://s.shopee.com.br/LZhg9Gh5G?share_channel_code=1">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\OCULOS\OCULOS.webp" alt="Produto Moda 2">
+        <div class="product-name">Óculos OARKLEY FEMININO/MASCULINO</div>
+        <a href="https://s.shopee.com.br/4AmQEpwYDw?share_channel_code=1">Comprar agora</a>
+      </div>
+     
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\CONJUNTOS\kit conjunto.webp" alt="Produto Moda 2">
+        <div class="product-name">Kit Streetwear Camiseta Oversized</div>
+        <a href="https://s.shopee.com.br/9KUVztCu3z">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\CONJUNTOS\regatas.webp" alt="Produto Moda 2">
+        <div class="product-name">Kit 2 Regata Canelada Masculina Americana</div>
+        <a href="https://s.shopee.com.br/BGIUSkEVt?share_channel_code=1">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\VESTIDOS\VESRTIDO.webp" alt="Produto Moda 2">
+        <div class="product-name">Vestido Longo feminino com Fenda Sensual </div>
+        <a href="https://s.shopee.com.br/5Aex5JnduV">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\clça\calça.webp" alt="Produto Moda 2">
+        <div class="product-name">Calça GG Feminina Pantalona Wide Leg </div>
+        <a href="https://s.shopee.com.br/4AmRH3v1rY">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\CHINELO\CHINELO SLD.webp" alt="Produto Moda 2">
+        <div class="product-name">Chinelo Nuvem Masculino e Feminino Fly Feet</div>
+        <a href=" https://s.shopee.com.br/9pQmel8pIv?share_channel_code=1">Comprar agora</a>
+      </div>
+     
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\CHINELO\chinelo.webp" alt="Produto Moda 3">
+        <div class="product-name">Chinelo Feminino Masculino Nuvem </div>
+        <a href="https://s.shopee.com.br/5pudpaVnN5">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\RELOGIO\sg-11134201-7rdw5-ly4sik99nn6wf4.webp" alt="Produto Moda 4">
+        <div class="product-name">Relógio smartwatch original x9 pro série 45mm</div>
+        <a href="https://s.shopee.com.br/Vt7UI0oRH">Comprar agora</a>
+        </div>
+        <div class="product">
+          <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\RELOGIO\RELOGIO.webp" alt="Produto Moda 2">
+          <div class="product-name">Relógio SZTME</div>
+          <a href="">Comprar agora</a>
+        </div> 
+        <div class="product">
+          <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\RELOGIO\casio.webp" alt="Produto Moda 2">
+          <div class="product-name">Relógio Casio FEMININO/MASCULINO</div>
+          <a href=" https://s.shopee.com.br/5fbDhFQgs8?share_channel_code=1">Comprar agora</a>
+        </div> 
+        <div class="product">
+          <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\PULSEIRA\PULSEIRA.webp" alt="Produto Moda 2">
+          <div class="product-name">Pulseiras Multicoloridas Com Estrelas Da Sorte Para Homens/Mulheres </div>
+          <a href="https://s.shopee.com.br/20hvKQXrxP?share_channel_code=1">Comprar agora</a>
+        </div>
+        <div class="product">
+          <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\colar\cordao.webp" alt="Produto Moda 2">
+          <div class="product-name">Colar Multicoloridas Com Estrelas Da Sorte Para Homens/Mulheres </div>
+          <a href=" https://s.shopee.com.br/30aSqxMAHx?share_channel_code=1">Comprar agora</a>
+        </div>
+        <div class="product">
+          <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\colar\colar.webp" alt="Produto Moda 2">
+          <div class="product-name">Corrente Cravejada + Pulseira Cravejada</div>
+          <a href=" https://s.shopee.com.br/7zz8o5yhm5?share_channel_code=1">Comprar agora</a>
+        </div>
+       
+      
+       
+      </div>
+    </div>
+
+  <section id="beleza" class="section">
+    <h2>Beleza</h2>
+    <div class="products">
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\beleza\hidratant.webp" alt="Produto Beleza 1">
+        <div class="product-name">Creme hidratante facial Embryolisse 75ml</div>
+        <a href="https://s.shopee.com.br/1qOWV3AJRn">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\beleza\iluminador.webp" alt="Produto Beleza 2">
+        <div class="product-name">Iluminador Em Gotas Corpo e Rosto Dourado AR Maquiagem 18ml</div>
+        <a href="https://s.shopee.com.br/8pYGq7E0xu">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\beleza\br-11134207-7r98o-m0dj2f9ez59999.webp" alt="Produto Beleza 3">
+        <div class="product-name">Kit 2 Séruns Renovador Principia </div>
+        <a href="https://s.shopee.com.br/AKN4d8jllk">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\beleza\tonic.webp" alt="Produto Beleza 4">
+        <div class="product-name">Tônico Principia 7% Ácido Lático + 1% Ácido Salicílico </div>
+        <a href="https://s.shopee.com.br/50LYHVqtna">Comprar agora</a>
+      </div>
+      <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\beleza\210c03e4d3bcb4cf2aaa739e9841b1f7.webp" alt="Produto Beleza 4">
+        <div class="product-name">Principia 95% Vitamina C Pura + 5% Ácido Ferúlico</div>
+        <a href="https://s.shopee.com.br/8UvQS78fFJ">Comprar agora</a>
+      </div> <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\beleza\br-11134207-7r98o-m3pfxnd3jtx40c.webp" alt="Produto Beleza 4">
+        <div class="product-name">Kit Principia Vitamina C-95 + Ácidos Hialurônicos
+        </div>
+        <a href="https://s.shopee.com.br/3Atu73jeXG">Comprar agora</a>
+      </div> <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\beleza\3cb0476ed1987264260f74b167141189.webp" alt="Produto Beleza 4">
+        <div class="product-name"> Sabonete Líquido Facial Hidrabene 120Ml</div>
+        <a href="https://s.shopee.com.br/2VeDK9I74x">Comprar agora</a>
+      </div> <div class="product">
+        <img src="c:\Users\Dalva\OneDrive\Área de Trabalho\velvetgold\beleza\br-11134207-7r98o-lkjs5o36rh485e.webp" alt="Produto Beleza 4">
+        <div class="product-name">Kit NanoVaporizador Mister + Bruma Navina Alongamento de Cilios Lash</div>
+        <a href="https://s.shopee.com.br/1qOWX7BKqa">Comprar agora</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
